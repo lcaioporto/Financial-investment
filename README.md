@@ -25,15 +25,17 @@ It is important to highlight that the program presents an approximate and not en
 
 # How to use
 
-Firstly, clone this repository
+Firstly, ensure you have the python version specified in `python-version.txt` installed in your machine.
+
+Then, clone this repository:
 ```
 git clone https://github.com/lcaioporto/Finance-investment.git
 ```
-After that, install the required libraries
+Install the required libraries:
 ```
 pip install -r requirements.txt
 ```
-Then, run the application
+And finally run the application:
 ```
 python backend/api.py
 ```
@@ -42,7 +44,7 @@ With this, you will be able to access the Web API in the address [http://0.0.0.0
 # Application example
 
 Form:
-![form image](frontend/img/form.png)
+![form image](img/form.png)
 
 Interactive graphic highlighting the target amount:
-![graphic image](frontend/img/graphic.png)
+![graphic image](img/graphic.png)
