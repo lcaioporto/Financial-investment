@@ -19,7 +19,6 @@ def process_input(
     request: Request, initial_amount: str = Form(...), monthly_invest: str = Form(...),
     tax: str = Form(...), years: str = Form(...), desired_final_value: str = Form(...)
     ):
-    # try:
     initial_amount = float(initial_amount)
     monthly_invest = float(monthly_invest)
     tax = float(tax)/100
