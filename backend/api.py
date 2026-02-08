@@ -3,11 +3,7 @@ import uvicorn
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from financial_calculator import FinancialCalculator
-import matplotlib.pyplot as plt
-from fastapi.responses import StreamingResponse, JSONResponse, HTMLResponse
-import plotly.express as px
-from plotly.io import to_html
-import pandas as pd
+from fastapi.responses import HTMLResponse
 from utils import Utils
 
 app = FastAPI()
@@ -61,13 +57,6 @@ def process_input(
     </html>
     """
     return HTMLResponse(content=response_html_content)
-
-    # except ValueError as e:
-    #     context = {
-    #         "request": request,
-    #         "error": e
-    #     }
-    #     return templates.TemplateResponse(request=request, name="post_error.html", context=context)
 
 if __name__ == '__main__':
     uvicorn.run(app, host="0.0.0.0", port=8000)

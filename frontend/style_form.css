@@ -3,10 +3,6 @@ body {
     text-align: center;
     justify-content: center;
     display: flex;
-    /* background-image: url('img/bg.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
 }
 
 body form {
@@ -23,7 +19,6 @@ body form {
 body form h1 {
     font-family: monospace;
     font-size: 34px;
-    /* font-variant: small-caps; */
 }
 
 body form .subtitle {
@@ -60,5 +55,5 @@ body form hr {
 }
 
 body form .submit_button:hover {
-    background-color: #bfc0bf; /* Change to green on hover */
+    background-color: #bfc0bf;
 }
